@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Anumitha's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="portfolio.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container fade-in">
+        <div class="menu-bar">
+            <a href="#" class="logo"><img src="a.png" alt="Logo" style="width: 24px;height: 24px;"></a>
+            <a href="#about">About Me</a>
+            <a href="#skills">Skills</a> 
+            <a href="#" id="projects-link">Projects</a>
+            <a href="#" id="resume-link">Resume</a>
+            <a href="#" id="certifications-link">Certifications</a>
+            <a href="#contact">Contact Me</a>
+        </div>
+        
+        <div class="header">
+            <div class="intro-content" id="intro-content">
+                <h1 style="font-size: 2.5rem; color: var(--text-light); margin-left: 30px;">Hi! This is</h1>
+                <h1 class="name">Anumitha</h1>
+            </div>
+            <div class="profile-container">
+                <div class="profile-pic" id="profile-pic">
+                    <img src="me4.jpeg" alt="Profile Picture">
+                </div>
+            </div>
+        </div>
+        
+        <section id="about" class="slide-in">
+            <h2 class="section-title">About me</h2>
+            <div class="about">
+                <img src="abtme1.webp" alt="About Me">
+                <div>
+                    <p>I am a passionate coder, artist, and nature lover, constantly exploring the world of AI and ML. Beyond AI, I am interested in Assembly Language.
+                    Am also good with wires and circuits! I'm a fast learner, always keen on
+                    learning and grasping new things quickly. 
+                    When I'm not coding, you'll find me reading books, drawing, or enjoying
+                    the beauty of nature.</p>
+                </div>
+            </div>
+            
+            <div class="container2">
+                <div class="quote">
+                    "According to all aerodynamic laws, a bumblebee cannot fly because it's body weight is not the right proportion to its wingspan...<br>Regardless, the bee flies."
+                </div>
+                <div class="bee-container">
+                    <img src="bee.png" class="bee-image" alt="Bee">
+                    <img src="dot.png" class="bee-path1-image" alt="Bee Path">
+                </div>
+            </div>
+        </section>
+        
+        <section id="skills" class="skills fade-in">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-div">
+                <div class="skill-item">
+                    <img class="hover-img" src="pybw.png" data-hover="python.png" alt="Python" title="Python">
+                    <p>Python</p>
+                </div>
+                <div class="skill-item">
+                    <img class="hover-img" src="cbw.png" data-hover="c.png" alt="C" title="C">
+                    <p>C</p>
+                </div>
+                <div class="skill-item">
+                    <img class="hover-img" src="c++bw.png" data-hover="c++.png" alt="C++" title="C++">
+                    <p>C++</p>
+                </div>
+                <div class="skill-item">
+                    <img class="hover-img" src="javabw.png" data-hover="java.png" alt="Java" title="Java">
+                    <p>Java</p>
+                </div>
+                <div class="skill-item">
+                    <img class="hover-img" src="htmlbw.png" data-hover="html.png" alt="HTML" title="HTML">
+                    <p>HTML</p>
+                </div>
+                <div class="skill-item">
+                    <img class="hover-img" src="cssbw.png" data-hover="css.png" alt="CSS" title="CSS">
+                    <p>CSS</p>
+                </div>
+                <div class="skill-item">
+                    <img class="hover-img" src="jsbw.png" data-hover="java-script.png" alt="JavaScript" title="JavaScript">
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill-item">
+                    <img class="hover-img" src="rjsbw.png" data-hover="reactjs.png" alt="ReactJS" title="ReactJS">
+                    <p>ReactJS</p>
+                </div>
+                <div class="skill-item">
+                    <img class="hover-img" src="mpbw.png" data-hover="mp.png" alt="Assembly" title="Assembly Language">
+                    <p>Assembly<br>Language</p>
+                </div>
+            </div>
+        </section>
+        
+        <div id="contact" class="contact">
+            <h3>Contact Me</h3>
+            <p>Mobile Number: +91 80722 74876 | Mail ID: anumitha.asokan@gmail.com</p>
+            <div class="social-links">
+                <a onclick="mailTo()" class="social-button">📧</a>
+            </div>
+        </div>
+    </div>
+    <div class="slide-page projects-page" id="projects-page">
+        <video class="video-background" autoplay loop muted>
+            <source src="wave.mp4" type="video/mp4">
+        </video>
+        <button class="close-btn" id="close-projects">✕</button>
+        <div class="page-content">
+            <h2 class="section-title">Projects</h2>
+            
+            
+            <div id="calc" class="project-item">
+                <h3>Calculator</h3>
+                <p>Simple working calculator using HTML, CSS and JS.</p>
+            </div>
+            
+            <div id="ca" class="project-item">
+                <h3>Chat Application</h3>
+                <p>Real time chat application using websockets in Ubuntu.</p>
+            </div>
+            
+            <div id="hnd" class="project-item">
+                <h3>Hospital Network Design</h3>
+                <p>Real life hospital network using Cisco packet tracer.</p>
+            </div>
+            
+            <div id="hgr" class="project-item">
+                <h3>Hand Gesture Recognition</h3>
+                <p>Using CNN+GRU hybrid machine learning model.</p>
+            </div>
+            
+            <div id="research" class="project-item">
+                <h3>Research Paper</h3>
+                <p>Research Paper on Operating Systems.</p>
+            </div>
+            <div class="grid">
+                <div class="slideshow">
+                    <button id="previousBtn">&lt;</button>
+                    <img id="image" src="proj1.jpeg" alt="Project">
+                    <button id="nextBtn">&gt;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide-page resume-page" id="resume-page">
+        <video class="video-background" autoplay loop muted>
+            <source src="wave2.mp4" type="video/mp4">
+        </video>
+        <button class="close-btn" id="close-resume">✕</button>
+        <div class="page-content">
+            <h2 class="section-title">Resume</h2>
+            
+            <div style="color: var(--text-light);">
+                <p><b>Name:</b> Anumitha Asokan<br><br><b>DOB:</b> 23-08-2005</p><br>
+                <p>Passionate AI and ML student with expertise in deep learning, Python, and computer vision. Fast learner with hands-on experience in Assembly Language and circuit design. Seeking opportunities to apply my skills in innovative tech projects.</p>
+                
+                <h3 style="margin-top: 20px;">Education:</h3>
+                <table>
+                    <tr>
+                        <th>Degree</th>
+                        <th>University/School Name</th>
+                        <th>Year of Graduation</th>
+                        <th>CGPA/Grade</th>
+                    </tr>
+                    <tr>
+                        <td>BTech AIML</td>
+                        <td>VIT Chennai</td>
+                        <td>2027</td>
+                        <td>8.69</td>
+                    </tr>
+                    <tr>
+                        <td>Class 12</td>
+                        <td>PSBS</td>
+                        <td>2023</td>
+                        <td>92.4%</td>
+                    </tr>
+                    <tr>
+                        <td>Class 10</td>
+                        <td>PSBS</td>
+                        <td>2021</td>
+                        <td>92%</td>
+                    </tr>
+                </table>
+                
+                <h3 style="margin-top: 20px;">Skills:</h3>
+                <p>Programming Languages: Python, C, C++, Java</p>
+                <p>Web Technologies: HTML, CSS, JavaScript, ReactJS</p>
+                <p>AI & ML: CNN, TensorFlow, OpenCV</p>
+                <p>Others: Assembly Language</p>
+                
+                <h3 style="margin-top: 20px;">Extracurricular activities:</h3>
+                <p>Member of 4 clubs : AVR, FAC, Seraphic, Thamizh Mandram</p>
+                <p>Part of ambience committee of Vibrance'25</p>
+                <p>Conducted many club events</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="slide-page certifications-page" id="certifications-page">
+        <video class="video-background" autoplay loop muted>
+            <source src="wave3.mp4" type="video/mp4">
+        </video>
+        <button class="close-btn" id="close-certifications">✕</button>
+        <div class="page-content">
+            <h2 class="section-title">Certifications</h2>
+            
+            <div class="certificate-grid">
+                <div class="certificate-item">
+                    <div class="certificate-image">
+                        <img src="pytrain.jpeg" alt="Python Training Certification">
+                    </div>
+                    <div class="certificate-content">
+                        <h3>Python Training</h3>
+                        <span class="badge">2023</span>
+                    </div>
+                </div>
+                
+                <div class="certificate-item">
+                    <div class="certificate-image">
+                        <img src="ctrain.jpeg" alt="C Training Certification">
+                    </div>
+                    <div class="certificate-content">
+                        <h3>C Training</h3>
+                        <span class="badge">2023</span>
+                    </div>
+                </div>
+                
+                <div class="certificate-item">
+                    <div class="certificate-image">
+                        <img src="cpp.jpeg" alt="C++ Training Certification">
+                    </div>
+                    <div class="certificate-content">
+                        <h3>C++ Training</h3>
+                        <span class="badge">2023</span>
+                    </div>
+                </div>
+                
+                <div class="certificate-item">
+                    <div class="certificate-image">
+                        <img src="part.jpeg" alt="Participation Certification">
+                    </div>
+                    <div class="certificate-content">
+                        <h3>Sysntax Sprint certification</h3>
+                        <span class="badge">2024</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+    
+    <script>
+        const images = [
+            'proj1.jpeg',
+            'proj2.jpeg',
+            'proj3.jpeg'
+        ];
+        let currentIndex = 0;
+        const previousBtn = document.getElementById('previousBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const image = document.getElementById('image');
+        
+        function nextImg() {
+            currentIndex = (currentIndex + 1) % images.length;
+            image.style.opacity = 0;
+            setTimeout(() => {
+                image.src = images[currentIndex];
+                image.style.opacity = 1;
+            }, 300);
+        }
+        
+        let autoSlide = setInterval(nextImg, 5000);
+        
+        function resetAutoSlide() {
+            clearInterval(autoSlide);
+            autoSlide = setInterval(nextImg, 3000);
+        }
+        
+        previousBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            image.style.opacity = 0;
+            setTimeout(() => {
+                image.src = images[currentIndex];
+                image.style.opacity = 1;
+            }, 300);
+            resetAutoSlide();
+        });
+        
+        nextBtn.addEventListener('click', () => {
+            nextImg();
+            resetAutoSlide();
+        });
+        
+        document.querySelectorAll(".hover-img").forEach(img => {
+            const originalSrc = img.src;
+            const hoverSrc = img.getAttribute("data-hover");
+            
+            img.addEventListener("mouseover", function() {
+                this.src = hoverSrc;
+                this.style.transform = "translateY(-10px)";
+            });
+            
+            img.addEventListener("mouseout", function() {
+                this.src = originalSrc;
+                this.style.transform = "translateY(0)";
+            });
+        });
+        
+        const projectsLink = document.getElementById('projects-link');
+        const resumeLink = document.getElementById('resume-link');
+        const certificationsLink = document.getElementById('certifications-link');
+        
+        const projectsPage = document.getElementById('projects-page');
+        const resumePage = document.getElementById('resume-page');
+        const certificationsPage = document.getElementById('certifications-page');
+        
+        const closeProjectsBtn = document.getElementById('close-projects');
+        const closeResumeBtn = document.getElementById('close-resume');
+        const certificationsBtn = document.getElementById('close-certifications');
+        
+        projectsLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            projectsPage.classList.add('active');
+        });
+        
+        resumeLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            resumePage.classList.add('active');
+        });
+        
+        certificationsLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            certificationsPage.classList.add('active');
+        });
+        
+        closeProjectsBtn.addEventListener('click', () => {
+            projectsPage.classList.remove('active');
+        });
+        
+        closeResumeBtn.addEventListener('click', () => {
+            resumePage.classList.remove('active');
+        });
+        
+        certificationsBtn.addEventListener('click', () => {
+            certificationsPage.classList.remove('active');
+        });
+        
+        profilePic.addEventListener('mouseout', () => {
+            profilePic.classList.remove('hovered');
+            hiddenText.classList.remove('show');
+            introContent.style.transform = 'translateX(0)';
+            
+            slidingTexts.forEach(text => {
+                text.classList.remove('show');
+            });
+        });
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            const revealElements = document.querySelectorAll('.skill-item, .project-item');
+            
+            function reveal() {
+                revealElements.forEach(element => {
+                    const windowHeight = window.innerHeight;
+                    const elementTop = element.getBoundingClientRect().top;
+                    const elementVisible = 150;
+                    
+                    if (elementTop < windowHeight - elementVisible) {
+                        element.classList.add('fade-in');
+                    }
+                });
+            }
+            
+            window.addEventListener('scroll', reveal);
+            reveal();
+        });
+
+        function mailTo() {
+            window.location.href = "mailto:anumitha.asokan@gmail.com?subject=Hello&body=I would like to contact you.";
+        }
+    </script>
+</body>
+</html>
